@@ -10,7 +10,7 @@ export const Navbar: React.FC<{ data: NavbarContent }> = ({ data }) => {
     <header className="w-full">
       {data.contactBar && (
         <div className="w-full bg-[#0B2540] text-white text-xs md:text-base py-[9px]">
-          <div className="max-w-[1290px] mx-auto px-4 flex items-center justify-end max-md:justify-center gap-3">
+          <div className="max-w-[1280px] max-xl:mx-4 mx-auto flex items-center justify-end max-md:justify-center gap-3">
             <svg
               width="20"
               height="20"
@@ -30,7 +30,7 @@ export const Navbar: React.FC<{ data: NavbarContent }> = ({ data }) => {
         </div>
       )}
       <nav className="bg-white relative">
-        <div className="max-w-[1290px] max-lg:mx-4 mx-auto py-5 flex items-center justify-between">
+        <div className="max-w-[1290px] max-xl:mx-4 mx-auto py-5 flex items-center justify-between">
           <div className="flex items-center gap-14">
             <svg
               width="57"

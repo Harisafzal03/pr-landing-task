@@ -20,7 +20,7 @@
       "subtitle": "Up to 50 leads per day. Zero returns and high quality.",
       "description": "Want to see pricing? We'll email it.",
       "form": {
-        "title": "Want to see pricing? We'll email it!",
+        "title": "Want to see pricing?\nWe'll email it!",
         "fields": [
           { "name": "fullName", "label": "Full name", "type": "text", "placeholder": "John Doe", "required": true },
           { "name": "email", "label": "Email", "type": "email", "placeholder": "john@example.com", "required": true },
@@ -135,22 +135,28 @@
           "links": [
             { "label": "How it works", "href": "#how-it-works" },
             { "label": "PR - CRM", "href": "#pr-crm" },
-            { "label": "Our leads", "href": "#leads-warning" },
-            { "label": "Pricing", "href": "#pricing" }
+            { "label": "Our leads", "href": "#leads-warning" }
           ]
         },
         {
           "title": "Legal",
           "links": [
+            { "label": "Pricing", "href": "#pricing" },
             { "label": "Privacy Policy", "href": "/privacy" },
             { "label": "Terms & Conditions", "href": "/terms" }
           ]
         }
       ],
-      "legal": "© Company 2025. All rights reserved.",
+      "legal": "© Company 2021 All Rights Reserved.",
       "badges": [
         { "text": "Trustpilot ★★★★☆" }
       ],
-      "contact": { "phone": "1 (888) 775-8687" }
+      "contact": {
+        "phone": "(888) 775-8857",
+        "address": {
+          "line1": "Address line goes here",
+          "line2": "Sreet line goes here"
+        }
+      }
     }
   }

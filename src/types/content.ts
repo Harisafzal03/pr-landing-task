@@ -52,14 +52,25 @@ export type Badge = {
     featured?: boolean
   }
   
-  export type FooterContent = {
+  export interface FooterContent {
     columns: {
-      title?: string
-      links: { label: string; href: string }[]
-    }[]
-    legal?: string
-    badges?: Badge[]
-    contact?: { phone?: string; email?: string; address?: string }
+      title?: string;
+      links: {
+        label: string;
+        href: string;
+      }[];
+    }[];
+    legal?: string;
+    badges?: {
+      text: string;
+    }[];
+    contact?: {
+      phone?: string;
+      address?: {
+        line1: string;
+        line2: string;
+      };
+    };
   }
   
   export type NavbarContent = {
