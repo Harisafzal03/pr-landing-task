@@ -1,7 +1,7 @@
 export const theme = {
     colors: {
       brand: {
-        yellow: "#FFD43A",
+        yellow: "#F8D12E",
         yellowDark: "#F2C532",
         navy: "#0E1A2A",
         navyLight: "#15263C",
@@ -17,6 +17,7 @@ export const theme = {
       border: {
         soft: "#E5E7EB",
         strong: "#D1D5DB",
+        yellow: "#F8D12E",
       },
       card: {
         bg: "#FFFFFF",

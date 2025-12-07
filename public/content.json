@@ -1,0 +1,156 @@
+{
+    "navbar": {
+      "logoText": "PROSPECTROUTE",
+      "links": [
+        { "label": "How it works", "href": "#how-it-works" },
+        { "label": "PR-CRM", "href": "#pr-crm" },
+        { "label": "Our leads", "href": "#leads-warning" },
+        { "label": "Pricing", "href": "#pricing" }
+      ],
+      "rightCtas": [
+        { "label": "Login", "href": "/login", "variant": "ghost" },
+        { "label": "Signup", "href": "/signup", "variant": "primary" }
+      ],
+      "trustBadge": { "text": "Trustpilot ★★★★☆" },
+      "contactBar": { "label": "Talk to sales", "phone": "1 (888) 775-8687" }
+    },
+    "hero": {
+      "eyebrow": "ProspectRoute",
+      "title": "High volume, pristine, exclusive leads.",
+      "subtitle": "Up to 50 leads per day. Zero returns and high quality.",
+      "description": "Want to see pricing? We'll email it.",
+      "form": {
+        "title": "Want to see pricing? We'll email it!",
+        "fields": [
+          { "name": "fullName", "label": "Full name", "type": "text", "placeholder": "John Doe", "required": true },
+          { "name": "email", "label": "Email", "type": "email", "placeholder": "john@example.com", "required": true },
+          { "name": "phone", "label": "Phone", "type": "tel", "placeholder": "(555) 123-4567" },
+          { "name": "agencyEmployees", "label": "Agency employees", "type": "select", "options": [
+            { "label": "1-3", "value": "1-3" }, { "label": "4-10", "value": "4-10" }, { "label": "11-25", "value": "11-25" }, { "label": "26+", "value": "26+" }
+          ]}
+        ],
+        "submitLabel": "Send pricing!",
+        "disclaimer": "We respect your inbox. No spam."
+      },
+      "illustration": "/img/hero-illustration.svg",
+      "ctas": [
+        { "label": "Click to read this", "href": "#how-it-works", "variant": "secondary" },
+        { "label": "See pricing", "href": "#pricing", "variant": "primary" }
+      ]
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "title": "Hand-curated Auto/Home Leads - Delivered to you digitally, exclusively.",
+      "paragraphs": [
+        "We’ve invested in thousands of time-tested channels that deliver high quality prospects to your producers.",
+        "ProspectRoute focuses on high intent signals, ensuring minimal returns and maximum value per lead."
+      ],
+      "illustration": "/img/how-illustration.svg",
+      "ctas": [
+        { "label": "Click to read this", "href": "#pr-crm", "variant": "secondary" },
+        { "label": "See pricing", "href": "#pricing", "variant": "primary" }
+      ]
+    },
+    "prCrm": {
+      "eyebrow": "The PR-CRM",
+      "title": "Get double the return on your marketing dollars. Best of all, the PR-CRM is free.",
+      "paragraphs": [
+        "PR-CRM is a powerful, free add-on tailored to insurance agencies.",
+        "It helps track follow-ups, dispositions, and agent performance so you maximize ROI from every lead."
+      ],
+      "ctas": [
+        { "label": "Click to read this", "href": "#leads-warning", "variant": "secondary" },
+        { "label": "Get pricing", "href": "#pricing", "variant": "primary" }
+      ]
+    },
+    "leadsWarning": {
+      "eyebrow": "Our Leads",
+      "title": "WARNING: Our leads may cause a sense of euphoria, relief, or satisfaction. Seek medical attention.",
+      "paragraphs": [
+        "They’re exceptionally consistent and high intent. Agents report better close rates and improved pipeline health.",
+        "We strictly vet sources to ensure quality and exclusivity."
+      ],
+      "ctas": [
+        { "label": "Click to read this", "href": "#pricing", "variant": "secondary" }
+      ]
+    },
+    "pricing": {
+      "eyebrow": "Pricing",
+      "title": "Choose your package",
+      "subtitle": "No contracts. No commitments. Pay as you go each week.",
+      "tiers": [
+        {
+          "title": "45-55",
+          "subTitle": "Calls/Week",
+          "stats": [
+            { "label": "Telemarketers", "value": "2" },
+            { "label": "Hours/Day", "value": "3" },
+            { "label": "Days/Week", "value": "5" },
+            { "label": "Includes live-transfers", "value": "Yes!" },
+            { "label": "100% exclusive", "value": "Yes!" },
+            { "label": "Post to Velocify", "value": "Yes!" },
+            { "label": "Dedicated reps", "value": "Yes!" }
+          ],
+          "price": { "amount": "$915", "cadence": "Per week" },
+          "ctas": [{ "label": "Signup", "href": "/signup", "variant": "secondary" }]
+        },
+        {
+          "title": "75-85",
+          "subTitle": "Calls/Week",
+          "stats": [
+            { "label": "Telemarketers", "value": "3" },
+            { "label": "Hours/Day", "value": "8" },
+            { "label": "Days/Week", "value": "5" },
+            { "label": "Includes live-transfers", "value": "Yes!" },
+            { "label": "100% exclusive", "value": "Yes!" },
+            { "label": "Post to Velocify", "value": "Yes!" },
+            { "label": "Dedicated reps", "value": "Yes!" }
+          ],
+          "price": { "amount": "$1,169", "cadence": "Per week" },
+          "ctas": [{ "label": "Signup", "href": "/signup", "variant": "primary" }],
+          "featured": true
+        },
+        {
+          "title": "90-110",
+          "subTitle": "Calls/Week",
+          "stats": [
+            { "label": "Telemarketers", "value": "4" },
+            { "label": "Hours/Day", "value": "8" },
+            { "label": "Days/Week", "value": "5" },
+            { "label": "Includes live-transfers", "value": "Yes!" },
+            { "label": "100% exclusive", "value": "Yes!" },
+            { "label": "Post to Velocify", "value": "Yes!" },
+            { "label": "Dedicated reps", "value": "Yes!" }
+          ],
+          "price": { "amount": "$1,627", "cadence": "Per week" },
+          "ctas": [{ "label": "Signup", "href": "/signup", "variant": "secondary" }]
+        }
+      ],
+      "disclaimer": "Pricing subject to change. Taxes may apply."
+    },
+    "footer": {
+      "columns": [
+        {
+          "title": "Company",
+          "links": [
+            { "label": "How it works", "href": "#how-it-works" },
+            { "label": "PR - CRM", "href": "#pr-crm" },
+            { "label": "Our leads", "href": "#leads-warning" },
+            { "label": "Pricing", "href": "#pricing" }
+          ]
+        },
+        {
+          "title": "Legal",
+          "links": [
+            { "label": "Privacy Policy", "href": "/privacy" },
+            { "label": "Terms & Conditions", "href": "/terms" }
+          ]
+        }
+      ],
+      "legal": "© Company 2025. All rights reserved.",
+      "badges": [
+        { "text": "Trustpilot ★★★★☆" }
+      ],
+      "contact": { "phone": "1 (888) 775-8687" }
+    }
+  }
