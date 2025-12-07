@@ -1,36 +1,37 @@
-import React, { useEffect, useState } from "react"
-import { PageContent } from "./types/content"
-import { Navbar } from "./components/sections/Navbar"
-import { Hero } from "./components/sections/Hero"
-import { Section } from "./components/sections/Section"
-import { Pricing } from "./components/sections/Pricing"
-import { Footer } from "./components/sections/Footer"
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+import { AuthProvider } from './context/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import Home from './pages/Home';
 
 function App() {
-  const [content, setContent] = useState<PageContent | null>(null)
-  const [error, setError] = useState<string | null>(null)
-
-  useEffect(() => {
-    fetch("/content.json")
-      .then((res) => res.json())
-      .then((data: PageContent) => setContent(data))
-      .catch((e) => setError(e.message))
-  }, [])
-
-  if (error) return <div className="p-6">Failed to load content: {error}</div>
-  if (!content) return <div className="p-6">Loading...</div>
-
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar data={content.navbar} />
-      <Hero data={content.hero} />
-      <Section id="how-it-works" data={content.howItWorks} yellowTop />
-      <Section id="pr-crm" data={content.prCrm} />
-      <Section id="leads-warning" data={content.leadsWarning} />
-      <Pricing data={content.pricing} />
-      <Footer data={content.footer} />
-    </div>
-  )
+    <Provider store={store}>
+      <Router>
+        <AuthProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route
+              path="/dashboard"
+              element={
+                <ProtectedRoute>
+                  <Dashboard />
+                </ProtectedRoute>
+              }
+            />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </AuthProvider>
+      </Router>
+    </Provider>
+  );
 }
 
-export default App
+export default App;
